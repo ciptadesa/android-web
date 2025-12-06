@@ -29,6 +29,11 @@ Generate native Android WebView apps for any website with a single workflow run,
 
 <br>
 
+## Generation List
+Open [release tags](https://github.com/Vauth/android-web/tags) to view generated apps.
+
+<br>
+
 ## Tech Stack
 - **Kotlin** - Modern Android development
 - **AndroidX WebKit** - Enhanced WebView capabilities
