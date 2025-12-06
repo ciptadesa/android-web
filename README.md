@@ -4,6 +4,7 @@ Generate native Android WebView apps for any website with a single workflow run,
 <br>
 
 ## How to Use
+- Fork this **Repository**
 - Go to the **Actions** tab in this repository
 - Click on **Build WebView App** workflow
 - Click **Run workflow**
