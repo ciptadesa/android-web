@@ -33,3 +33,7 @@ Generate native Android WebView apps for any website with a single workflow run,
 - **AndroidX WebKit** - Enhanced WebView capabilities
 - **Material Design** - Native Android styling
 
+<br>
+
+## Screenshot (youtube.com)
+<a href="#Screenshot"><img src="https://github.com/user-attachments/assets/195a5719-f697-4ff5-9c64-97a605e3637e" width="300px"></a>
