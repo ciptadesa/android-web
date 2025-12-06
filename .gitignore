@@ -1,0 +1,19 @@
+# Gradle files
+.gradle/
+build/
+local.properties
+gradle-*/
+*.zip
+
+# IDE
+.idea/
+*.iml
+
+# Generated files
+*.apk
+*.aab
+*.dex
+*.class
+
+# Logs
+*.log
