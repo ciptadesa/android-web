@@ -186,7 +186,7 @@ class MainActivity : AppCompatActivity() {
             container?.addView(loadingOverlay)
             
             // Create floating action buttons
-            createFloatingButtons()
+            // createFloatingButtons()
             
             setContentView(container)
             
