@@ -3,37 +3,26 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-// Read app configuration from environment or use defaults
-def websiteUrl = System.getenv("WEBSITE_URL") ?: "https://example.com"
-def appName = System.getenv("APP_NAME") ?: "WebView App"
-// Generate unique package suffix from app name
-// This creates a unique applicationId for each app to avoid conflicts when installing multiple apps
-def packageSuffix = System.getenv("PACKAGE_SUFFIX") ?: appName.toLowerCase()
-    .replaceAll(/[^a-z0-9]/, '')
-    .take(20)
-def uniqueAppId = "com.webviewapp.${packageSuffix}"
-
 android {
-    // Namespace is used for code generation and R class references (static)
     namespace 'com.vauth.webviewapp'
     compileSdk 34
 
     defaultConfig {
-        // ApplicationId is the unique identifier for the app in Android (dynamic per build)
-        applicationId uniqueAppId
+        // ID Paten agar tidak berubah-ubah
+        applicationId "com.ciptadesa.app" 
         minSdk 24
         targetSdk 34
-        // Dynamic version code based on timestamp to avoid APK conflicts
-        // Using seconds since epoch to ensure each build has unique version
-        versionCode ((System.currentTimeMillis() / 1000L) as int)
-        versionName "1.0." + new Date().format('yyyyMMdd.HHmm')
         
-        // Pass website URL to the app via BuildConfig
-        buildConfigField "String", "WEBSITE_URL", "\"${websiteUrl}\""
+        // Versi otomatis agar setiap build selalu dianggap baru oleh HP
+        versionCode ((System.currentTimeMillis() / 1000L) as int)
+        versionName "1.1"
+        
+        // Link paten langsung ke website Cipta Desa
+        buildConfigField "String", "WEBSITE_URL", "\"https://ciptadesa.com\""
         buildConfigField "String", "GITHUB_URL", "\"https://github.com/vauth\""
         
-        // Set app name
-        resValue "string", "app_name", "" + appName
+        // Nama Aplikasi Paten
+        resValue "string", "app_name", "Cipta Desa"
     }
 
     compileOptions {
