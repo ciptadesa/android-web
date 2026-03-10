@@ -40,11 +40,6 @@ class MainActivity : AppCompatActivity() {
     private var container: FrameLayout? = null
     private var loadingOverlay: FrameLayout? = null
     
-    // Tombol dideklarasikan sebagai null agar tidak memakan memori
-    private var fabGithub: FloatingActionButton? = null
-    private var fabBack: FloatingActionButton? = null
-    private var fabForward: FloatingActionButton? = null
-    
     private var fileUploadCallback: ValueCallback<Array<Uri>>? = null
     private var geolocationCallback: GeolocationPermissions.Callback? = null
     private var geolocationOrigin: String? = null
