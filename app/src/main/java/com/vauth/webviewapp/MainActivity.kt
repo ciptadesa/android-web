@@ -194,11 +194,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Fungsi tetap ada tapi tidak dipanggil di onCreate agar tombol tidak muncul
-    private fun createFloatingButtons() {
-        // Kosong atau biarkan saja, selama tidak dipanggil di onCreate, tombol tidak akan muncul
-    }
-
     private fun setupBackPressHandler() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
